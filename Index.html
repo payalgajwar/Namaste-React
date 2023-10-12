@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React First Webpage</title>
+    <link rel="stylesheet" href="./Index.css" />
   </head>
   <body>
     <div id="root">
+      <h1>Hello World!</h1>
       <h1>hELLO</h1>
+      <!-- React will overide this -->
       <h1>there</h1>
     </div>
     <script
@@ -18,37 +21,6 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
-    <script>
-      const heading = React.createElement("div", { id: "parent" }, [
-        React.createElement("div", { id: "child" }, [
-          React.createElement(
-            "h1",
-            {
-              id: "child1",
-            },
-            "Namaste-React"
-          ), // {} - pass attributes for creating tag
-          React.createElement("h2", { id: "child2" }, "PAyal"),
-        ]),
-
-        React.createElement(
-          "div",
-          { id: "child" },
-
-          [
-            React.createElement(
-              "h2",
-              {
-                id: "childnd",
-              },
-              "Your Website to Shop"
-            ),
-            React.createElement("h2", { id: "child2" }, "Helk"),
-          ]
-        ),
-      ]);
-      const root = ReactDOM.createRoot(document.getElementById("root"));
-      root.render(heading);
-    </script>
+    <script src="./App.js"></script>
   </body>
 </html>
